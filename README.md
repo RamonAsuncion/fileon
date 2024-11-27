@@ -2,16 +2,11 @@
 
 A basic file explorer written in Java 21.
 
-Java SWING can give you practice with JTree, JList, and file handling.
+In the end I'm trying to show that I can use
 
-Display a list of files and directories in a JTree or JList.
-Allow users to navigate through folders, view files, and maybe even delete or rename them.
-Implement basic file operations like creating, deleting, or renaming files using JFileChooser.
-
-The company is looking for:
-
-* Proficiency in Java and Python
+* Proficiency in Java
 * Java SWING
 * JUnit
+  * I'll add Mockito
 * Maven (for build automation)
 * CI/CD for automated testing
