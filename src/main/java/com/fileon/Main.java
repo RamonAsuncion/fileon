@@ -1,17 +1,13 @@
 package com.fileon;
 
+import javax.swing.*;
+
 import com.fileon.ui.MainFrame;
 
 public class Main {
     public static void main(String[] args) {
-        MainFrame mainFrame = new MainFrame();
-
-        javax.swing.SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                mainFrame.setVisible(true);
-            }
-        });
+        ConfigReader reader = new ConfigReader("config.properties");
+        Config config = reader.getConfig();
+        SwingUtilities.invokeLater(() -> new MainFrame(config).setVisible(true));
     }
-
 }
